@@ -1,0 +1,18 @@
+{
+  "id": "zen-webext-bridge",
+  "name": "Zen WebExt Bridge",
+  "description": "Exposes custom Zen APIs to WebExtensions via the browser.zen namespace.",
+  "author": "Dahmane",
+  "version": "1.0.0",
+  "style": {
+    "chrome": "style.css",
+    "content": ""
+  },
+  "scripts": {
+    "zen-webext-bridge.uc.js": {
+      "include": ["chrome://browser/content/browser.xhtml", "<all_urls>"]
+    }
+  },
+  "preferences": "preferences.json",
+  "enabled": true
+}
